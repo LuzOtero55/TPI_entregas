@@ -30,7 +30,7 @@ def cantidad_agua(d):
         case 5:
             agua = 160
     agua = volumen * agua
-    return print(agua, "ltrs de agua")
+    return print(agua, "litros de agua")
 
 
 def volumen_grava(d):
@@ -67,18 +67,27 @@ def volumen_arena(d):
     return print(round(arena, 2), "m3 de arena")
 
 
-print("BIENVENIDOS A SOLIDO SIMULATOOOOOOOOOR (Suena musica epica)")
+print("BIENVENIDOS A SOLIDO SIMULATOR!")
 
-# Paso 1: Calcular el volumen V = l * a * e
-print("Calcularemos el volumen de cemento a llenar, para eso complete con las dimensiones")
-longitud = float(input("Ingrese la longitud: "))
-ancho = float(input("Ingrese el ancho: "))
-espesor = float(input("Ingrese el espesor: "))
+# Paso 1: Ingreso y calculo del volumen
+print("Calcularemos el volumen de cemento necesario, para ello complete con las dimensiones")
+longitud = float(input("Ingrese la longitud de la estructura: "))
+while longitud <= 0:
+    print("Error! El dato ingresado es invalido, ingrese la longitud nuevamente: ")
+    longitud = float(input())
+ancho = float(input("Ingrese el ancho de la estructura: "))
+while ancho <= 0:
+    print("Error! El dato ingresado es invalido, ingrese el ancho nuevamente: ")
+    ancho = float(input())
+espesor = float(input("Ingrese el espesor de la estructura: "))
+while espesor <= 0:
+    print("Error! El dato ingresado es invalido, ingrese el espesor nuevamente: ")
+    espesor = float(input())
 volumen = longitud * ancho * espesor
 print("El volumen es: ", round(volumen, 2), "m3 \n")
 
-# Paso 2: Dosificacion del concreto
-print("Seleccione la dosificacion de concreto que necesita: ")
+# Paso 2: Selecciona la dosificación del concreto
+print("Seleccione la dosificación de concreto que necesita: ")
 dosificacion = int(input("1) Tipo 1:2:2 (3500Psi / Resistencia 246Kg/cm2)\n"
                          "2) Tipo 1:2:3 (3000Psi / Resistencia 210Kg/cm2)\n"
                          "3) Tipo 1:2:4 (2500Psi / Resistencia 175Kg/cm2)\n"
@@ -86,13 +95,14 @@ dosificacion = int(input("1) Tipo 1:2:2 (3500Psi / Resistencia 246Kg/cm2)\n"
                          "5) Tipo 1:3:6 (1500Psi / Resistencia 105Kg/cm2)\n"))
 
 while dosificacion > 5 or dosificacion < 1:
-    print("Error! La opcion seleccionada es inválida, vuelva a ingresarla: ")
+    print("Error! La opción seleccionada es inválida, vuelva a ingresarla: ")
     dosificacion = int(input())
 
-print("\nPara llenar", round(volumen, 2), "m3 de cemento se necesitaran: ")
+# Paso 3: Imprime los resultados
+print("\nPara llenar", round(volumen, 2), "m3 de cemento se necesitan: ")
 kilos_cemento(dosificacion)
 cantidad_agua(dosificacion)
 volumen_grava(dosificacion)
 volumen_arena(dosificacion)
 
-print("\n\nMuchas gracias por usar Solido Simulator!\nSolido Simulator © - 2023")
+print("\n\nMuchas gracias por utilizar Solido Simulator!\nSolido Simulator © - 2023")
