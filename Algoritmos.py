@@ -1,43 +1,98 @@
-# Calcular el volumen: V= L * a * e
-
-def calculo_volumen():
-    longitud= int(input("Ingrese la longitud: "))
-    ancho=int(input("Ingrese el ancho: "))
-    espesor= float(input("Ingrese el espesor: "))
-    global volumen
-    volumen = longitud * ancho * espesor
-    return print("El volumen es:",round(volumen,2), "m3")
-
-calculo_volumen()
-
-#paso 2: dosificacion del concreto
-#A modo de Ejemplo:
-print("Para una dosificacion 1:2:3 - Un concreto con resistencia de 3000psi(lib/ pulg) o 210 (Kg/cm2)")
-print("tenemos cemento igual a 350kg, arena 0.56m3, grava 0,84m3 y agua 180L equivale; a 1m3 de concreto")
-
-#Calculo con bolsas de 50kg y desperdicio aprox del 5%
-def bolsas_cemento():
-    cantidadbolsas= int(7)
-    resultado= volumen * cantidadbolsas * float(1.05)
-    return print("La cantidad de sacos de 50kg a utilizar son:", round(resultado,2))
-bolsas_cemento()
-
-def volumen_arena():
-    resultado=volumen * float(0.56)
-    return print("El volumen de arena es:", round(resultado,2),"m3")
-
-volumen_arena()
-
-def volumen_grava():
-    resultado=volumen * float(0.84)
-    return print("El volumen de grava es:", round(resultado,2),"m3")
-volumen_grava()
-
-def cantidad_agua():
-    resultado=volumen * int(180)
-    return print("La cantidad de agua necesaria es:", resultado,"L/m3")
-cantidad_agua()
+# Funciones utilizadas
+def kilos_cemento(d):
+    cemento = 0
+    match d:
+        case 1:
+            cemento = 8.4
+        case 2:
+            cemento = 7
+        case 3:
+            cemento = 6
+        case 4:
+            cemento = 5.2
+        case 5:
+            cemento = 4.2
+    cemento = (volumen * cemento) * 1.05
+    return print(round(cemento, 2), "bolsas de 50kg de cemento")
 
 
+def cantidad_agua(d):
+    agua = 0
+    match d:
+        case 1:
+            agua = 220
+        case 2:
+            agua = 180
+        case 3:
+            agua = 170
+        case 4:
+            agua = 170
+        case 5:
+            agua = 160
+    agua = volumen * agua
+    return print(agua, "ltrs de agua")
 
 
+def volumen_grava(d):
+    grava = 0
+    match d:
+        case 1:
+            grava = 0.67
+        case 2:
+            grava = 0.84
+        case 3:
+            grava = 0.96
+        case 4:
+            grava = 0.84
+        case 5:
+            grava = 1
+    grava = volumen * grava
+    return print(round(grava, 2), "m3 de grava")
+
+
+def volumen_arena(d):
+    arena = 0
+    match d:
+        case 1:
+            arena = 0.67
+        case 2:
+            arena = 0.56
+        case 3:
+            arena = 0.48
+        case 4:
+            arena = 0.63
+        case 5:
+            arena = 0.5
+    arena = volumen * arena
+    return print(round(arena, 2), "m3 de arena")
+
+
+print("BIENVENIDOS A SOLIDO SIMULATOOOOOOOOOR (Suena musica epica)")
+
+# Paso 1: Calcular el volumen V = l * a * e
+print("Calcularemos el volumen de cemento a llenar, para eso complete con las dimensiones")
+longitud = float(input("Ingrese la longitud: "))
+ancho = float(input("Ingrese el ancho: "))
+espesor = float(input("Ingrese el espesor: "))
+volumen = longitud * ancho * espesor
+print("El volumen es: ", round(volumen, 2), "m3 \n")
+
+# Paso 2: Dosificacion del concreto
+print("Seleccione la dosificacion de concreto que necesita: ")
+dosificacion = int(input("1) Tipo 1:2:2 (3500Psi / Resistencia 246Kg/cm2)\n"
+                         "2) Tipo 1:2:3 (3000Psi / Resistencia 210Kg/cm2)\n"
+                         "3) Tipo 1:2:4 (2500Psi / Resistencia 175Kg/cm2)\n"
+                         "4) Tipo 1:3:4 (2000Psi / Resistencia 140Kg/cm2)\n"
+                         "5) Tipo 1:3:6 (1500Psi / Resistencia 105Kg/cm2)\n"))
+
+while dosificacion > 5 or dosificacion < 1:
+    print("Error! La opcion seleccionada es inválida, vuelva a ingresarla: ")
+    dosificacion = int(input())
+
+print("\nPara llenar", round(volumen, 2), "m3 de cemento se necesitaran: ")
+kilos_cemento(dosificacion)
+cantidad_agua(dosificacion)
+volumen_grava(dosificacion)
+volumen_arena(dosificacion)
+
+print("\n\nMuchas gracias por usar Solido Simulator!\nSolido Simulator © - 2023")
