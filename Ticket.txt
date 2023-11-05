@@ -1,13 +1,1 @@
-########################################
-           SOLIDO SIMULATOR
-########################################
-CLIENTE: Giordano Ivan
-DNI N° 38790031     TEL: 3535100205
-########################################
-VOLUMEN DE CONSTRUCCION: 0.009416cm3
-########################################
-0.08 bolsas de 50kg de cemento
-2.07152 litros de agua
-0.01 m3 de grava
-0.01 m3 de arena
-########################################
+Ticket vacio.
