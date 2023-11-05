@@ -252,7 +252,10 @@ def dosif_concreto(dni, apellido, nombre, telefono):
     if ticket in ('S', 's', 'Si', 'SI', 'Y', 'y'):
         print("")
         imprimir_ticket()
+
         input("\n\nTicket impreso! Presione cualquier tecla para volver al menu.")
+=======
+        input("\nTicket impreso! Presione cualquier tecla para volver al menu.")
     else:
         input("\nPresione cualquier tecla para volver al menu.")
 
@@ -264,6 +267,7 @@ def imprimir_ticket():
     elif os.name == "ce" or os.name == "nt" or os.name == "dos":
         limpieza = "cls"
     os.system(limpieza)
+=======
     f = open("Ticket.txt", 'r')
     direccion = f.readlines()
     f.close()
