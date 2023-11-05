@@ -246,13 +246,23 @@ def dosif_concreto(dni, apellido, nombre, telefono):
     print(f"\n{volumen_arena(dosificacion)} m3 de arena\n")
     historial_hormigonera(dni, kilos_cemento(dosificacion), cantidad_agua(dosificacion),
                           volumen_grava(dosificacion), volumen_arena(dosificacion))
+    ticketera(dni, apellido, nombre, telefono, kilos_cemento(dosificacion), cantidad_agua(dosificacion),
+              volumen_grava(dosificacion), volumen_arena(dosificacion))
     ticket = input("Desea imprimir el ticket? (S/N) ")
     if ticket in ('S', 's', 'Si', 'SI', 'Y', 'y'):
-        ticketera(dni, apellido, nombre, telefono, kilos_cemento(dosificacion), cantidad_agua(dosificacion),
-                  volumen_grava(dosificacion), volumen_arena(dosificacion))
+        print("")
+        imprimir_ticket()
         input("\nTicket impreso! Presione cualquier tecla para volver al menu.")
     else:
         input("\nPresione cualquier tecla para volver al menu.")
+
+
+def imprimir_ticket():
+    f = open("Ticket.txt", 'r')
+    direccion = f.readlines()
+    f.close()
+    for line in direccion:
+        print(line)
 
 
 def ticketera(dni, apellido, nombre, telefono, cemento, agua, grava, arena):

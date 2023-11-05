@@ -4,10 +4,10 @@
 CLIENTE: Giordano Ivan
 DNI N° 38790031     TEL: 3535100205
 ########################################
-VOLUMEN DE CONSTRUCCION: 0.009416cm3
+VOLUMEN DE CONSTRUCCION: 8.0m3
 ########################################
-0.08 bolsas de 50kg de cemento
-2.07152 litros de agua
-0.01 m3 de grava
-0.01 m3 de arena
+58.8 bolsas de 50kg de cemento
+1440.0 litros de agua
+6.72 m3 de grava
+4.48 m3 de arena
 ########################################
