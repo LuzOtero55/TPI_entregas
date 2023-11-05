@@ -1,0 +1,90 @@
+
+Venta a 38790031: 
+   Cemento: 12.6 bolsas de 50kg
+   Agua: 340.0lts
+   Grava: 1.92m3
+   Arena: 0.96m3
+
+Venta a 38790031: 
+   Cemento: 70.56 bolsas de 50kg
+   Agua: 1760.0lts
+   Grava: 5.36m3
+   Arena: 5.36m3
+
+Venta a 38790031: 
+   Cemento: 987.84 bolsas de 50kg
+   Agua: 24640.0lts
+   Grava: 75.04m3
+   Arena: 75.04m3
+
+Venta a 38790031: 
+   Cemento: 404.25 bolsas de 50kg
+   Agua: 9900.0lts
+   Grava: 46.2m3
+   Arena: 30.8m3
+
+Venta a 38790031: 
+   Cemento: 291.06 bolsas de 50kg
+   Agua: 10560.0lts
+   Grava: 66.0m3
+   Arena: 33.0m3
+
+Venta a 30507673: 
+   Cemento: 58.8 bolsas de 50kg
+   Agua: 1440.0lts
+   Grava: 6.72m3
+   Arena: 4.48m3
+
+Venta a 30507673: 
+   Cemento: 720.72 bolsas de 50kg
+   Agua: 22440.0lts
+   Grava: 110.88m3
+   Arena: 83.16m3
+
+Venta a 38790031: 
+   Cemento: 88.2 bolsas de 50kg
+   Agua: 2200.0lts
+   Grava: 6.7m3
+   Arena: 6.7m3
+
+Venta a 38790031: 
+   Cemento: 8.82 bolsas de 50kg
+   Agua: 220.0lts
+   Grava: 0.67m3
+   Arena: 0.67m3
+
+Venta a 38790031: 
+   Cemento: 8.82 bolsas de 50kg
+   Agua: 220.0lts
+   Grava: 0.67m3
+   Arena: 0.67m3
+
+Venta a 38790031: 
+   Cemento: 8.82 bolsas de 50kg
+   Agua: 220.0lts
+   Grava: 0.67m3
+   Arena: 0.67m3
+
+Venta a 38790031: 
+   Cemento: 8.82 bolsas de 50kg
+   Agua: 220.0lts
+   Grava: 0.67m3
+   Arena: 0.67m3
+
+Venta a 38790031: 
+   Cemento: 2.29 bolsas de 50kg
+   Agua: 56.06682712728303lts
+   Grava: 0.26m3
+   Arena: 0.17m3
+
+Venta a 38790031: 
+   Cemento: 873180.0 bolsas de 50kg
+   Agua: 21780000.0lts
+   Grava: 66330.0m3
+   Arena: 66330.0m3
+
+Venta a 38790031: 
+   Cemento: 0.08 bolsas de 50kg
+   Agua: 2.07152lts
+   Grava: 0.01m3
+   Arena: 0.01m3
